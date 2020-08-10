@@ -17,17 +17,15 @@
       </div>
     </div>
   </div> -->
-  <div class="bg-gray-200 min-h-full absolute w-full z-10">
-    <div class="bg-gray-800">
+  <div class="bg-gray-200 min-h-full max-h-screen absolute w-full z-10">
+    <div class="bg-gray-800 z-50 relative">
       <Logo />
     </div>
-    <Navbar />
+    <Navbar class="z-50" />
     <Sidebar />
-    <Results />
+    <Results class="max-h-full absolute" />
   </div>
 </template>
-
-
 
 <script lang="ts">
 import Vue from 'vue'

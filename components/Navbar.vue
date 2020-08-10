@@ -1,5 +1,5 @@
 <template>
-  <nav class="bg-white pt-4 h-20" :class="{'py-4': !opened}">
+  <nav class="bg-white pt-4 h-20 z-50" :class="{'py-4': !opened}">
     <div class="flex flex-row flex-wrap mx-auto h-20">
       <div class="pl-24 flex flex-auto w-1/2 items-center">
         <div class="container flex-row flex">
