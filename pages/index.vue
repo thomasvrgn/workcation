@@ -1,4 +1,4 @@
-<template>
+<template class="bg-gray-200">
   <!-- <div class="absolute inset-0 h-full w-full flex flex-row">
     <div class="flex flex-col w-1/5">
       <div class="flex flex-initial bg-blue-400 h-16">
@@ -17,13 +17,15 @@
       </div>
     </div>
   </div> -->
-  <div class="bg-gray-200 min-h-full max-h-screen absolute w-full z-10">
-    <div class="bg-gray-800 z-50 relative">
-      <Logo />
+  <div class="bg-gray-200 h-full max-h-full absolute w-full z-10 overflow-y-hidden">
+    <div class="fixed w-full">
+      <div class="bg-gray-800 z-40 relative">
+        <Logo />
+      </div>
+      <Navbar class="z-30" />
     </div>
-    <Navbar class="z-50" />
     <Sidebar />
-    <Results class="max-h-full absolute" />
+    <Results class="h-full absolute bg-gray-200 overflow-y-scroll" />
   </div>
 </template>
 

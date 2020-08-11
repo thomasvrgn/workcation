@@ -1,5 +1,5 @@
 <template>
-  <nav class="bg-white pt-4 h-20 z-50" :class="{'py-4': !opened}">
+  <nav class="bg-white pt-4 h-20 z-40" :class="{'py-4': !opened}">
     <div class="flex flex-row flex-wrap mx-auto h-20">
       <div class="pl-24 flex flex-auto w-1/2 items-center">
         <div class="container flex-row flex">
@@ -18,7 +18,7 @@
           </span>
         </div>
       </div>
-      <div class="flex flex-auto flex-col space-y-2 order-last list-none my-5 font-medium text-gray-800 bg-white transform  relative mt-4 transition-all duration-300 back px-24 py-4" :class="{'-translate-y-56 -mt-0 pointer-events-none': !opened}">
+      <div class="flex flex-auto flex-col space-y-2 order-last list-none my-5 font-medium bg-white transform relative mt-4 transition-all duration-300 back px-24 py-4" :class="{'-translate-y-56 -mt-0 pointer-events-none text-white': !opened, 'text-gray-800': opened}">
         <li class="cursor-pointer hover:text-gray-900 hover:bg-gray-100 px-4 py-2 rounded-md">
           List your property
         </li>

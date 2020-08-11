@@ -1,9 +1,9 @@
 <template>
-  <div class="p-4">
-    <button class="bg-gray-700 text-white font-semibold py-2 px-8 rounded-r-sm focus:outline-none hover:bg-gray-800 focus:bg-gray-900 transition-colors duration-150 absolute back" @click=open id="sidebarButton">
+  <div class="pt-3 px-4">
+    <button class="fixed z-50 mt-2 bg-gray-600 text-white font-semibold py-2 px-8 rounded-r-sm focus:outline-none hover:bg-gray-700 focus:bg-gray-900 transition-colors duration-150 absolute" @click=open id="sidebarButton">
       Filters
     </button>
-    <div class="absolute inset-0 h-full w-2/6 bg-gray-700 transition duration-500 overflow-y-auto z-50" id="sidebar">
+    <div class="fixed inset-0 h-full w-2/6 bg-gray-700 transition duration-500 overflow-y-auto z-50" id="sidebar">
       <form action="" class="min-h-full absolute w-full">
         <div class="container flex flex-row flex-wrap p-4">
           <div class="flex flex-auto w-3/6 flex-col px-2">

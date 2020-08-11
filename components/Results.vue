@@ -1,6 +1,6 @@
 <template>
   <div class="max-h-full back">
-    <div class="mt-12 mx-8 relative bg-gray-200">
+    <div class="mt-48 mx-8 relative bg-gray-200">
       <div class="container">
         <h1 class="text-xl font-semibold text-gray-700">
           Los Angeles
