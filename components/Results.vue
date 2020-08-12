@@ -1,7 +1,7 @@
 <template>
-  <div class="max-h-full back">
-    <div class="mt-48 mx-8 relative bg-gray-200">
-      <div class="container">
+  <div class="max-h-full back w-full">
+    <div class="mt-48 px-8 relative w-full bg-gray-200">
+      <div class="container ml-4">
         <h1 class="text-xl font-semibold text-gray-700">
           Los Angeles
         </h1>
@@ -10,7 +10,7 @@
         </p>
       </div>
       <div class="flex flew-row space-x-5">
-        <carousel class="space-x-4 cursor-pointer">
+        <carousel class="space-x-4 cursor-pointer mx-auto w-full">
           <slide class="mx-4">
             <Review />
           </slide>
@@ -29,8 +29,8 @@
         </carousel>
       </div>
     </div>
-    <div class="mt-12 mx-8 relative bg-gray-200">
-      <div class="container">
+    <div class="mt-12 px-8 relative w-full bg-gray-200">
+      <div class="container ml-4">
         <h1 class="text-xl font-semibold text-gray-700">
           Los Angeles
         </h1>
@@ -39,7 +39,7 @@
         </p>
       </div>
       <div class="flex flew-row space-x-5">
-        <carousel class="space-x-4 cursor-pointer">
+        <carousel class="space-x-4 cursor-pointer mx-auto w-full">
           <slide class="mx-4">
             <Review />
           </slide>

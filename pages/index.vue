@@ -25,7 +25,7 @@
       <Navbar class="z-30" />
     </div>
     <Sidebar />
-    <Results class="h-full absolute bg-gray-200 overflow-y-scroll" />
+    <Results class="h-full absolute bg-gray-200 w-full overflow-y-scroll" />
   </div>
 </template>
 
