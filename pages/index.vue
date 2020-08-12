@@ -17,15 +17,17 @@
       </div>
     </div>
   </div> -->
-  <div class="bg-gray-200 h-full max-h-full absolute w-full z-10 overflow-y-hidden">
-    <div class="fixed w-full">
-      <div class="bg-gray-800 z-40 relative">
-        <Logo />
+  <div class="bg-gray-200 h-full max-h-full absolute w-full z-10 overflow-y-hidden lg:flex-col lg:flex">
+    <div class="fixed w-full lg:flex lg:flex-row lg:relative lg:flex-initial">
+      <div class="bg-gray-800 z-40 relative lg:w-1/5 lg:flex">
+        <Logo class="lg:flex lg:flex-row" />
       </div>
-      <Navbar class="z-30" />
+      <Navbar class="z-30 lg:w-4/5" />
     </div>
-    <Sidebar />
-    <Results class="h-full absolute bg-gray-200 w-full overflow-y-scroll" />
+    <div class="lg:flex lg:flex-row lg:flex-auto">
+      <Sidebar class="lg:flex lg:w-1/5" />
+      <Results class="h-full absolute bg-gray-200 w-full overflow-y-scroll lg:flex lg:relative lg:w-4/5" />
+    </div>
   </div>
 </template>
 

@@ -1,10 +1,10 @@
 <template>
-  <div class="pt-3 px-4">
-    <button class="fixed z-50 mt-2 bg-gray-600 text-white font-semibold py-2 px-8 rounded-r-sm focus:outline-none hover:bg-gray-700 focus:bg-gray-900 transition-colors duration-150 absolute" @click=open id="sidebarButton">
+  <div class="pt-3 px-4 lg:pt-0 lg:px-0">
+    <button class="fixed z-50 mt-2 bg-gray-600 text-white font-semibold py-2 px-8 rounded-r-sm focus:outline-none hover:bg-gray-700 focus:bg-gray-900 transition-colors duration-150 absolute lg:hidden" @click=open id="sidebarButton">
       Filters
     </button>
-    <div class="fixed inset-0 h-full w-2/6 bg-gray-700 transition duration-500 overflow-y-auto z-50" id="sidebar">
-      <form action="" class="min-h-full absolute w-full">
+    <div class="fixed inset-0 h-full w-2/6 bg-gray-700 transition duration-500 overflow-y-auto z-50 lg:relative lg:h-auto lg:w-full" id="sidebar">
+      <form action="" class="min-h-full absolute w-full lg:min-h-0 lg:relative">
         <div class="container flex flex-row flex-wrap p-4">
           <div class="flex flex-auto w-3/6 flex-col px-2">
             <label for="" class="block font-semibold text-gray-400 text-sm">
@@ -96,7 +96,7 @@
           </li>
         </div>
         <hr class="border-gray-800 border">
-        <div class="container flex flex-col p-4 mb-20">
+        <div class="container flex flex-col p-4 mb-20 lg:mb-0">
           <label for="" class="block font-semibold text-gray-400 text-sm mb-3">
             Amenities
           </label>
@@ -165,7 +165,7 @@
             </span>
           </li>
         </div>
-        <div class="sticky bottom-0 w-full bg-gray-900 px-4 py-4" id="button">
+        <div class="sticky lg:fixed bottom-0 w-full lg:w-1/5 bg-gray-900 px-4 py-4" id="button">
           <button class="bg-indigo-500 w-full block py-2 px-2 font-semibold text-white rounded-md hover:bg-indigo-600 focus:bg-indigo-700 focus:outline-none transition-colors duration-150">
             Update results
           </button>
@@ -189,16 +189,18 @@ export default Vue.extend({
   mounted: function () {
     const sidebar = document.getElementById('sidebar')
     if (sidebar !== null) {
-      sidebar.style.transform = 'translateX(' + -sidebar.offsetWidth + 'px)'
-      window.addEventListener('click', function (e) {
-        if (e.target !== null) {
-          if (!hasParentWithMatchingSelector(e.target, '#sidebar')) {
-            if (!['sidebarButton', 'sidebar'].includes(e.target.id)) {
-              sidebar.style.transform = 'translateX(' + -sidebar.offsetWidth + 'px)'
+      if (window.matchMedia('(max-width: 1022px)').matches) {
+        sidebar.style.transform = 'translateX(' + -sidebar.offsetWidth + 'px)'
+        window.addEventListener('click', function (e) {
+          if (e.target !== null) {
+            if (!hasParentWithMatchingSelector(e.target, '#sidebar')) {
+              if (!['sidebarButton', 'sidebar'].includes(e.target.id)) {
+                sidebar.style.transform = 'translateX(' + -sidebar.offsetWidth + 'px)'
+              }
             }
           }
-        }
-      })
+        })
+      }
     }
   },
   methods: {
@@ -231,7 +233,7 @@ export default Vue.extend({
 #sidebar::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
-@media (min-width: 872px) {
+@media (min-width: 872px ) and (max-width: 1022px) {
   #button {
     position: fixed !important;
   }
