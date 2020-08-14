@@ -22,7 +22,7 @@
       <div class="bg-gray-800 z-40 relative lg:w-1/5 lg:flex">
         <Logo class="lg:flex lg:flex-row" />
       </div>
-      <Navbar class="z-30 lg:w-4/5" />
+      <Navbar class="z-30 lg:w-4/5 lg:flex lg:items-center" />
     </div>
     <div class="lg:flex lg:flex-row lg:flex-auto">
       <Sidebar class="lg:flex lg:w-1/5" />
