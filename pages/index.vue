@@ -1,5 +1,5 @@
 <template>
-  <div class="absolute inset-0 h-full w-full flex flex-row">
+  <!-- <div class="absolute inset-0 h-full w-full flex flex-row">
     <div class="flex flex-col w-1/5">
       <div class="flex flex-initial bg-blue-400 h-16">
         <Logo />
@@ -16,8 +16,15 @@
         <Results />
       </div>
     </div>
+  </div> -->
+  <div>
+    <div class="bg-gray-800">
+      <Logo />
+    </div>
   </div>
 </template>
+
+
 
 <script lang="ts">
 import Vue from 'vue'

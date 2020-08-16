@@ -1,3 +1,3 @@
 <template>
-  <img src="@/assets/logo.svg" class="w-3/4 mx-auto" alt="">
+  <img src="@/assets/logo-inverted.svg" class="w-64 py-5 mx-auto" alt="">
 </template>
