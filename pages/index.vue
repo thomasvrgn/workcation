@@ -22,6 +22,7 @@
       <Logo />
     </div>
     <Navbar />
+    <Sidebar />
     <Results />
   </div>
 </template>
