@@ -4,7 +4,7 @@
       Filters
     </button>
     <div class="absolute inset-0 h-full w-2/6 bg-gray-700 transition duration-500 overflow-y-auto z-50" id="sidebar">
-      <form action="">
+      <form action="" class="min-h-full absolute w-full">
         <div class="container flex flex-row flex-wrap p-4">
           <div class="flex flex-auto w-3/6 flex-col px-2">
             <label for="" class="block font-semibold text-gray-400 text-sm">
@@ -165,7 +165,7 @@
             </span>
           </li>
         </div>
-        <div class="sticky bottom-0 w-full bg-gray-900 px-4 py-4">
+        <div class="sticky bottom-0 w-full bg-gray-900 px-4 py-4" id="button">
           <button class="bg-indigo-500 w-full block py-2 px-2 font-semibold text-white rounded-md hover:bg-indigo-600 focus:bg-indigo-700 focus:outline-none transition-colors duration-150">
             Update results
           </button>
@@ -231,4 +231,9 @@ export default Vue.extend({
 #sidebar::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+@media (min-width: 872px) {
+  #button {
+    position: fixed !important;
+  }
+} 
 </style>
