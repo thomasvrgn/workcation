@@ -17,10 +17,12 @@
       </div>
     </div>
   </div> -->
-  <div>
+  <div class="bg-gray-200 min-h-full absolute w-full">
     <div class="bg-gray-800">
       <Logo />
     </div>
+    <Navbar />
+    <Results />
   </div>
 </template>
 
