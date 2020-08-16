@@ -165,7 +165,7 @@
             </span>
           </li>
         </div>
-        <div class="fixed bottom-0 w-full bg-gray-900 px-4 py-4">
+        <div class="sticky bottom-0 w-full bg-gray-900 px-4 py-4">
           <button class="bg-indigo-500 w-full block py-2 px-2 font-semibold text-white rounded-md hover:bg-indigo-600 focus:bg-indigo-700 focus:outline-none transition-colors duration-150">
             Update results
           </button>
