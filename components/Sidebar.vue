@@ -177,6 +177,11 @@
 
 <script lang="ts">
 import Vue from 'vue'
+function hasParentWithMatchingSelector (target: EventTarget, selector: string) : any {
+  return [...document.querySelectorAll(selector)].some(el =>
+    el !== target && el.contains(target)
+  )
+}
 export default Vue.extend({
   data: () => ({
     opened: false
@@ -187,8 +192,10 @@ export default Vue.extend({
       sidebar.style.transform = 'translateX(' + -sidebar.offsetWidth + 'px)'
       window.addEventListener('click', function (e) {
         if (e.target !== null) {
-          if (!['sidebarButton', 'sidebar'].includes(e.target.id)) {
-            sidebar.style.transform = 'translateX(' + -sidebar.offsetWidth + 'px)'
+          if (!hasParentWithMatchingSelector(e.target, '#sidebar')) {
+            if (!['sidebarButton', 'sidebar'].includes(e.target.id)) {
+              sidebar.style.transform = 'translateX(' + -sidebar.offsetWidth + 'px)'
+            }
           }
         }
       })
