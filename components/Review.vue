@@ -1,5 +1,5 @@
-<template>
-  <div class="container flex flex-row relative w-full mt-8 h-64">
+<template class="lg:w-4/6 lg:mx-auto lg:block">
+  <div class="container flex flex-row relative w-full lg:w-4/6 mt-8 h-64 lg:mx-auto">
     <img src="https://th.bing.com/th/id/OIP.Q07ZD2Df4KWEqudS-PHubQHaE_?w=261&h=180&c=7&o=5&pid=1.7" class="w-full object-cover h-48 rounded-lg shadow-lg" alt="">
     <div class="container absolute h-32 mt-32 px-2">
       <div class="container bg-white h-32 rounded-lg shadow-lg p-4">

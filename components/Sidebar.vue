@@ -1,17 +1,17 @@
 <template>
   <div class="pt-3 px-4 lg:pt-0 lg:px-0">
-    <button class="fixed z-50 mt-2 bg-gray-600 text-white font-semibold py-2 px-8 rounded-r-sm focus:outline-none hover:bg-gray-700 focus:bg-gray-900 transition-colors duration-150 absolute lg:hidden" @click=open id="sidebarButton">
+    <button class="fixed z-50 mt-2 bg-gray-600 text-white font-semibold py-2 px-8 rounded-r-sm focus:outline-none hover:bg-gray-700 focus:bg-gray-900 transition-colors duration-150 lg:absolute lg:hidden" @click=open id="sidebarButton">
       Filters
     </button>
     <div class="fixed inset-0 h-full w-2/6 bg-gray-700 transition duration-500 overflow-y-auto z-50 lg:relative lg:h-auto lg:w-full" id="sidebar">
-      <form action="" class="min-h-full absolute w-full lg:min-h-0 lg:relative">
+      <form action="" class="min-h-full h-full absolute w-full lg:min-h-0 lg:relative">
         <div class="container flex flex-row flex-wrap p-4">
           <div class="flex flex-auto w-3/6 flex-col px-2">
             <label for="" class="block font-semibold text-gray-400 text-sm">
               Bedrooms
             </label>
             <div class="inline-block relative mt-2 cursor-pointer">
-              <select class="block appearance-none w-full bg-gray-600   px-4 py-2 pr-8 rounded leading-tight focus:outline-none text-gray-200 cursor-pointer">
+              <select class="block appearance-none w-full bg-gray-600 px-4 py-2 pr-8 rounded leading-tight focus:outline-none text-gray-200 cursor-pointer">
                 <option>1</option>
                 <option>2</option>
                 <option>3</option>
@@ -165,7 +165,7 @@
             </span>
           </li>
         </div>
-        <div class="sticky lg:fixed bottom-0 w-full lg:w-1/5 bg-gray-900 px-4 py-4" id="button">
+        <div class="sticky lg:relative bottom-0 lg:block w-full bg-gray-900 px-4 py-4 lg:py-6" id="button">
           <button class="bg-indigo-500 w-full block py-2 px-2 font-semibold text-white rounded-md hover:bg-indigo-600 focus:bg-indigo-700 focus:outline-none transition-colors duration-150">
             Update results
           </button>

@@ -1,6 +1,6 @@
 <template>
   <nav class="bg-white pt-4 h-20 z-40 lg:py-0 lg:pt-0" :class="{'py-4': !opened}">
-    <div class="flex flex-row flex-wrap mx-auto h-20 lg:container lg:mx-8 lg:h-auto lg:items-center">
+    <div class="flex flex-row flex-wrap mx-auto lg:container lg:mx-8 lg:h-auto lg:items-center">
       <div class="pl-24 flex flex-auto w-1/2 items-center lg:w-auto lg:pl-0">
         <div class="container flex-row flex">
           <span class="flex items-center mr-6 cursor-pointer text-gray-800 lg:hidden" @click=openNavbar>
@@ -18,7 +18,7 @@
           </span>
         </div>
       </div>
-      <div class="flex flex-auto flex-col space-y-2 order-last lg:order-1 lg:translate-y-0 lg:text-gray-800 lg:flex-row list-none my-5 font-medium bg-white transform relative mt-4 transition-all duration-300 back px-24 py-4 lg:px-0 lg:mt-0 lg:py-0 lg:space-y-0 lg:z-50 lg:my-0 lg:pointer-events-auto lg:justify-end lg:pr-4" :class="{'-translate-y-56 -mt-0 pointer-events-none text-white': !opened, 'text-gray-800': opened}">
+      <div class="flex flex-auto flex-col space-y-2 order-last lg:order-1 lg:translate-y-0 lg:text-gray-800 lg:flex-row list-none my-5 font-medium bg-white transform relative mt-4 transition-all duration-300 back px-24 py-4 lg:px-0 lg:mt-0 lg:py-0 lg:space-y-0 lg:z-50 lg:my-0 lg:pointer-events-auto lg:justify-end lg:pr-4" :class="{'-translate-y-64 -mt-0 pointer-events-none text-white': !opened, 'text-gray-800': opened}">
         <li class="cursor-pointer hover:text-gray-900 hover:bg-gray-100 px-4 py-2 rounded-md">
           List your property
         </li>

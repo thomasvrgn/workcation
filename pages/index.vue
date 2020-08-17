@@ -17,16 +17,16 @@
       </div>
     </div>
   </div> -->
-  <div class="bg-gray-200 h-full max-h-full absolute w-full z-10 overflow-y-hidden lg:flex-col lg:flex">
-    <div class="fixed w-full lg:flex lg:flex-row lg:relative lg:flex-initial">
-      <div class="bg-gray-800 z-40 relative lg:w-1/5 lg:flex">
+  <div class="bg-gray-200 max-h-full absolute w-full z-10 lg:flex-col lg:flex">
+    <div class="fixed w-full lg:flex lg:flex-row lg:relative lg:flex-initial lg:h-20">
+      <div class="bg-gray-800 z-40 relative lg:w-1/5 lg:flex lg:fixed">
         <Logo class="lg:flex lg:flex-row" />
       </div>
-      <Navbar class="z-30 lg:w-4/5 lg:flex lg:items-center" />
+      <Navbar class="z-30 lg:w-4/5 lg:flex lg:items-center lg:right-0 lg:absolute" />
     </div>
     <div class="lg:flex lg:flex-row lg:flex-auto">
-      <Sidebar class="lg:flex lg:w-1/5" />
-      <Results class="h-full absolute bg-gray-200 w-full overflow-y-scroll lg:flex lg:relative lg:w-4/5" />
+      <Sidebar class="lg:flex lg:w-1/5 lg:fixed" />
+      <Results class="h-full lg:max-h-full lg:h-auto absolute bg-gray-200 w-full lg:flex right-0 lg:w-4/5" />
     </div>
   </div>
 </template>

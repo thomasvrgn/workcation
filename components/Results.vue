@@ -1,6 +1,6 @@
 <template>
-  <div class="max-h-full back w-full">
-    <div class="mt-48 px-8 relative w-full bg-gray-200">
+  <div class="max-h-full back w-full lg:flex lg:flex-col bg-gray-200">
+    <div class="pt-48 px-8 relative w-full bg-gray-200 lg:pt-4">
       <div class="container ml-4">
         <h1 class="text-xl font-semibold text-gray-700">
           Los Angeles
@@ -29,7 +29,7 @@
         </carousel>
       </div>
     </div>
-    <div class="mt-12 px-8 relative w-full bg-gray-200">
+    <div class="pt-12 lg:mt-0 px-8 relative w-full bg-gray-200">
       <div class="container ml-4">
         <h1 class="text-xl font-semibold text-gray-700">
           Los Angeles
@@ -39,7 +39,7 @@
         </p>
       </div>
       <div class="flex flew-row space-x-5">
-        <carousel class="space-x-4 cursor-pointer mx-auto w-full">
+        <carousel class="space-x-4 cursor-pointer lg:z-50 mx-auto w-full">
           <slide class="mx-4">
             <Review />
           </slide>
@@ -75,5 +75,10 @@ export default Vue.extend({
 <style scoped>
 .back {
   z-index: -1200;
+}
+@media (min-width: 1023px) {
+  .back {
+    z-index: 50;
+  }
 }
 </style>
